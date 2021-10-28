@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is the Internet?</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+            color: rebeccapurple;
+            font-size: 35px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            background-color: white;
+            float: right;
+            padding: 14px 20px;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: rebeccapurple;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .logo {
+            color: rebeccapurple;
+            float: left;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: mediumpurple;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            color: rebeccapurple;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rebeccapurple;
+            color: white;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+        a:link, a:visited {
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        .webimg {
+            background-color: #aaa;
+            padding: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="#">Then This</a>
+    <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>The Internet</h1>
+    <h3>What is it and why use it?</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>Photo of me:</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>What is the Internet?</h2>
+            <h4>Oct 28, 2021</h4>
+            <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+            <p>The internet is...</p>
+            <p>a group of protocols for information sharing amongst a decentralized network. Invented in the 1970s by Vint Cerf and Bob Kahn, the modern-day internet was modeled on an earlier DoD project named ARPANET, which was simply a communication system that was designed to survive a nuclear attack. Their solution was to break messages into blocks, or “packets” and send those around the network as fast as possible. In the beginning, ARPANET was limited to large universities. The internet expanded access along the same protocols and allowed anyone to join. Today, the internet is mainly made up of large, independently operated networks. Every operator needs to ensure that there is end to end connectivity between all nodes, but how that is done is up to them, as long as they follow the protocols.</p>
+            <br>
+            <h2>Why use the internet?</h2>
+            <h4>Oct 28th, 2021</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>We should use the internet because...</p>
+            <p>There is no definite purpose or reason to use the internet but the best reason for its success would be democratizing access to information. This principle of information sharing with little control has been seen to affect significant real-world events and has pushed the development of a huge number of new technologies. The Internet also motivates the development of applications that can reach a large user base with little effort, if the application is worth using. In the modern day, companies that leverage the internet to power their business are amongst the most profitable companies on the planet.
+                Examples of Internet Technology
+                Some networks that leverage the TCP/IP protocol are
+            <ul>
+                <li>Arpanet</li>
+                <li>Internet</li>
+                <li>Private Internets/extranets</li>
+
+            Some companies that built their applications over the internet include:
+
+                <li>Facebook</li>
+                <li>Amazon</li>
+                <li>Netflix</li>
+                <li>Google</li>
+            </ul>
+</p>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <h2>What powers the internet?</h2>
+        <h4>Oct 28, 2021</h4>
+        <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+        <p>There are many things that go into powering the internet.</p>
+        <p>The internet works via an international collaboration of interconnected networks. As long as all these networks
+            adhere to the open protocols defined by the Internet standards, host to host communication can be
+            achieved with high amounts of reliability and in a minimal amount of time. Connection is achieved via
+            direct means (DS, copper cable, fiber optic cable) or indirect means (WiFi, mobile networks).
+            Access to the internet can be achieved via a web client, a type of software designed to access the internet. The client is connected to a
+            local access network (LAN) via a router, and the LAN is connected to a wide area network via an Internet Exchange Point owned by an Internet
+            Service Provider. Internet messages are sent along this network via packets, which are labeled pieces of information, to their destination address. </p>
+        <br>
+</article>
+<!-- Footer -->
+<div class="footer">
+    <h2>Sehrish Saeed &#169</h2>
+</div>
+</body>
+</html>

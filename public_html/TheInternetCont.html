@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is the Internet?</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+            color: rebeccapurple;
+            font-size: 35px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            background-color: white;
+            float: right;
+            padding: 14px 20px;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: rebeccapurple;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .logo {
+            color: rebeccapurple;
+            float: left;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: mediumpurple;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            color: rebeccapurple;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rebeccapurple;
+            color: white;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+        a:link, a:visited {
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        .webimg {
+            background-color: #aaa;
+            padding: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="#">Then This</a>
+    <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>More on the Internet</h1>
+    <h3></h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>Photo of me:</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>Wires, Cables, & Wifi</h2>
+            <h4>Oct 28, 2021</h4>
+            <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+            <p>The way Information is transferred...</p>
+            <p>Information on the internet is transferred in terms of bits, which is simply an on or off signals. Bits are grouped
+                together in groups of 8 bits, which makes one byte, and 1000 of these bytes make a kilobyte. These can be considered the atoms
+                of the information, or the most basic building blocks of the information being sent around. The latency of the system is the measure
+                of time it takes for one bit to travel from one node to another. Using copper cable, such an ethernet cable, one can easily and cheaply transmit data,
+                but after 80 meters, signal loss becomes too much to handle. Fiber optic cables use light pulses to increase the bandwidth immensely, but they are expensive
+                and fragile, and require a lot of supporting infrastructure. Finally, radio systems such as WiFi are cheap and easy to implement, but only provide a good
+                signal within a range proportional to their power. </p>
+            <br>
+            <h2>IP Addresses</h2>
+            <h4>Oct 28th, 2021</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>What are they?</p>
+            <p>Vint Cert and Bob Kahn invented the Internetworking Protocol, which laid the ground work for todays modern internet. Given that
+                the internet is just a mesh of many different networks, how does one communicate from one node to another with minimal interruption? The internet
+                in the words of its creator Vint is that the Internet is “ a design philosophy and an architecture expressed in a set of protocols” The physical technologies
+                that want to join just need to follow the protocol. This type of IP address is called IPv4, with capacity for 4 billion unique addresses. A newer type of IP
+                address called IPv6 is being implemented to allow more devices with no congestion.</p>
+            <ul>
+                <li>Arpanet</li>
+                <li>Internet</li>
+                <li>Private Internets/extranets</li>
+
+                Some companies that built their applications over the internet include:
+
+                <li>Facebook</li>
+                <li>Amazon</li>
+                <li>Netflix</li>
+                <li>Google</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <h2>DNS</h2>
+        <h4>Oct 28, 2021</h4>
+        <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+        <p>What is it?</p>
+        <p>When you request a website, you type its domain name into your web browser. This domain is registered with ICANN, and it hosted on a domain name server.
+            Often times, the domain name server that you connect to will not know what the IP address of the domain you are trying to connect to is. It will then reach out to
+            other servers to try and find the correct IP address, and once it does, it will return that information, as well as keep a log of that information in its cache in case
+            you or someone else needs to access that domain again in the near future. </p>
+        <br>
+</article>
+<!-- Footer -->
+<div class="footer">
+    <h2>Sehrish Saeed &#169</h2>
+</div>
+</body>
+</html>

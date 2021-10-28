@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is the Internet?</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+            color: rebeccapurple;
+            font-size: 35px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            background-color: white;
+            float: right;
+            padding: 14px 20px;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: rebeccapurple;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .logo {
+            color: rebeccapurple;
+            float: left;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: mediumpurple;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            color: rebeccapurple;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rebeccapurple;
+            color: white;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+        a:link, a:visited {
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        .webimg {
+            background-color: #aaa;
+            padding: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="logo">History of the Internet</div>
+<div class="navbar">
+    <a href="http://history18.eastus.azurecontainer.io">Home</a>
+    <a href="#">Then This</a>
+    <a href="http://history18.eastus.azurecontainer.io/f-layout.html">F Layout</a>
+    <a href="http://history18.eastus.azurecontainer.io/z-layout.html">Z Layout</a>
+</div>
+<!-- Header -->
+<div class="header">
+    <h1>Packets, Routing, & Reliability</h1>
+    <h3>What are they?</h3>
+</div>
+<article>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>Photo of me:</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>Packets</h2>
+            <h4>Oct 28, 2021</h4>
+            <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+            <p></p>
+            <p>The amount of information on the internet is very vast. Due to this, data does not travel in a direct fashion.
+                In order to provide reliable connections between data and the user, data travels on the internet in a less direct way.
+                Vint Cerf, who is the co-creator of the internet designed the internet’s protocols and architecture. Information gets
+                transferred from one computer to another through “packets”. A good example is when an image is too large to be sent
+                through one packet and needs to be divided into smaller parts. Packets have the internet address of where they came
+                from and where they are going.</p>
+            <br>
+            <h2>Routing</h2>
+            <h4>Oct 28th, 2021</h4>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p></p>
+            <p>Routers act as traffic monitors to make sure that packets are moving smoothly throughout the different routes.
+                If one route is congested, then other packets will take different routes and arrive at different times or out
+                of order. Packets choose the cheapest available path to get to the correct internet IP address. Cheapest in this
+                case, means time, politics, and relationships between companies. Different paths create fault tolerance and leads to reliability.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <h2>Reliability</h2>
+        <h4>Oct 28, 2021</h4>
+        <div class="webimg"><img src="images/web.jpg" alt="web" class="responsive"></div>
+        <p></p>
+        <p>Transmission Control Protocol, better known as TCP, manages the sending the receiving of packets. It’s similar
+            to a mail service. If there are packets that are missing, TCP does not approve the file, and this could result in the song
+            sounding different or off. TCP and router systems are scalable, they can run on 8 or 8 billion devices. The more routers
+            there are, then the more reliable the internet becomes.</p>
+        <br>
+</article>
+<!-- Footer -->
+<div class="footer">
+    <h2>Sehrish Saeed &#169</h2>
+</div>
+</body>
